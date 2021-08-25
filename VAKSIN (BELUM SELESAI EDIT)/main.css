@@ -1,0 +1,245 @@
+
+@font-face {
+    font-family:Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+    
+}
+
+@font-face {
+    font-family:Painter;
+    src: url(fonts/Painter_PERSONAL_USE_ONLY.ttf);
+    
+}
+
+@font-face {
+    font-family:futura;
+    src: url(fonts/futur.ttf);
+    
+}
+
+html, body{
+    height: 80vh;
+    margin: 0;
+    
+}
+
+body{
+    background:#e2e2e2;
+    font-family: Montserrat;
+    color:cadetblue;
+    
+}
+#bg{
+    height: 0vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('image/Vaksin.jpeg');
+	background-size:cover;
+	background-position: center;
+	height: 1730px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+}
+
+
+@media (min-width:880px){
+
+    #main{
+        display: grid;
+        grid-template-columns:20% auto auto;
+        grid-template-rows: 15% auto auto;
+        justify-content: stretch;
+        align-items: center;
+        grid-template-areas: "logo menu sign"
+        "main main main" "social social social";
+    }
+
+    #social-icons{
+      justify-content: flex-end;
+      align-items: flex-end;
+    
+    }
+    
+
+#main  nav ul li{
+    margin: 15%;
+    color:#ffa;
+}
+
+
+}
+
+@media (max-width:880px){
+   body{
+    background: #005fff;
+   }
+    #main{
+        display: grid;
+        grid-template-columns:200px auto;
+        grid-template-rows: 15% auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "logo sign"
+        "menu menu"
+        "main main"
+        "social social";
+    }
+    #social-icons{
+        background: #005fff;
+        margin-top: 50px; 
+        justify-content: center;
+        align-items: center;
+        mix-blend-mode: difference;
+        /* cursor: pointer; */
+    }
+    
+
+#main  nav ul li{
+    margin: 13%;
+    color: #ffa;
+}
+    
+
+}
+
+#main  #logo{
+    grid-area: logo;
+    font-size: 40pt;
+    padding: 20px;
+    font-family: Painter;
+    cursor: pointer;
+}
+
+
+#main  nav ul{
+    list-style-type: none;
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+} 
+
+
+
+#main nav ul li:hover{
+    cursor :pointer;
+}
+
+
+#sign-nav{
+    grid-area:sign;
+    display: flex;
+    flex-direction:row;
+    
+    justify-content:center;
+    align-items: center;
+}
+
+#sign-nav div{
+    margin: 3%;
+    
+}
+
+
+#sign-nav div{
+    cursor :pointer;
+}
+
+
+#main-content {
+    grid-area: main;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-content #big-title h1{
+    
+    font-family:futura;
+    font-size: 4em;
+}
+
+
+
+
+#desc{
+    width: 490px;
+    font-size: 13pt;
+    line-height: 19.5pt;
+    
+}
+#desc p{
+    margin: auto 14pt 9pt 14pt;
+    color: #ffa;
+}
+
+.btnvaksin{
+    display: block;
+    height: 60px;
+    width: 200px;
+    border-radius: 19px;
+    background-color:#ff0;
+    color: #3c3b3b;
+    padding-top: 10px;
+    position:relative;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+    /* box-shadow: 0 4px; */
+    cursor: pointer;
+}
+
+
+#social-icons{
+    grid-area:social;
+  display: flex;
+  flex-direction: row;
+  /* cursor: pointer; */
+}
+
+
+#social-icons img{
+margin: 10px;
+mix-blend-mode: difference;
+filter: hue-rotate(210deg);
+}
+
+ /* font-size: 1.7em;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ff0;
+    color: #3c3b3b;
+    box-shadow: 1px 7px 28px;
+    margin-top: 35px;
+    cursor: pointer;
+    text-decoration: none;  */
+
+/* a{
+   display: block;
+   height: 60px;
+   width: 200px;
+   background-color:#ff0;
+   border-radius: 25px;
+   position:relative;
+   margin: auto;
+   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+   text-align: center;
+   text-anchor:end;
+   font-size: 25px;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   place-items: center;
+   color: cadetblue;
+   text-decoration: none;
+   cursor: pointer;
+   font-family:Montserrat;
+   padding-top: 15px;
+   src: url(fonts/Montserrat-Regular.ttf);
+    } */
